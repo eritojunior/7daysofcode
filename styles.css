@@ -1,0 +1,179 @@
+:root {
+   --cinza-claro: #667085;
+   --vermelho-escuro: #8E2424;
+   --branco: #FFFFFF;
+   --preto: #000000;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Inter', sans-serif;
+}
+
+body {
+   width: 100%;
+   height: 100vh;
+}
+
+nav {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding: 1rem 0;
+}
+
+.links a {
+   color: var(--cinza-claro);
+   text-decoration: none;
+   margin-right: 2rem;
+}
+
+.links a:hover {
+   color: var(--vermelho-escuro);
+   font-weight: 600;
+}
+
+button {
+   padding: 0.8rem 1rem;
+   cursor: pointer;
+   border: none;
+   border-radius: 0.5rem;
+   font-weight: 500;
+   background: none;
+   color: var(--cinza-claro);
+   font-size: 0.9rem;
+}
+
+button#signUp {
+   background-color: var(--vermelho-escuro);
+   color: var(--branco);
+}
+
+/* CABEÇALHO */
+.cab__container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 5rem 0 6rem 0;
+   gap: 1rem;
+}
+
+.cab__container span {
+   color: var(--vermelho-escuro);
+   font-weight: 600;
+}
+
+.cab__container h1 {
+   font-size: 2rem;
+}
+
+.cab__container p {
+   color: var(--cinza-claro);
+   text-align: center;
+   max-width: 50%;
+}
+
+/* MÉTRICAS */
+.met__container {
+   display: grid;
+   grid-template-columns: auto auto auto auto;
+   grid-gap: 2.2rem;
+   padding: 0 5rem 5rem 5rem;
+}
+
+.met__container h2 {
+   color: var(--vermelho-escuro);
+   font-size: 2.5rem;
+   margin-bottom: 0.8rem;
+}
+
+.met__container h3 {
+   margin-bottom: 0.6rem;
+}
+
+.met__container span {
+   color: var(--cinza-claro);
+}
+
+/* VAGAS 1 */
+.vag__container {
+   display: flex;
+   flex-direction: column;
+   padding: 3rem;
+   gap: 4rem;
+}
+
+.vag__primeira-box {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 1rem;
+}
+
+.vag__primeira-box span {
+   color: var(--vermelho-escuro);
+   font-weight: 600;
+   font-size: 0.9rem;
+}
+
+.vag__primeira-box h1 {
+   font-size: 1.6rem;
+}
+
+.vag__primeira-box p {
+   color: var(--cinza-claro);
+   text-align: center;
+   margin-bottom: 2.5rem;
+}
+
+.vag__primeira-box img {
+   max-width: 100%;
+   padding: 0 1rem;
+}
+
+/* VAGAS 2 */
+.vag__segunda-box {
+   display: flex;
+   flex-direction: column;
+   gap: 4rem;
+   padding-left: 15rem;
+}
+
+.vag__primeira-box--interna {
+   display: flex;
+   flex-direction: column;
+   gap: 3rem;
+}
+
+.vag__primeira-box--interna div {
+   display: flex;
+   flex-direction: column;
+   padding-left: 1.5rem;
+   gap: 1.5rem;
+}
+
+.vag__segunda-box--interna {
+   display: flex;
+   flex-direction: column;
+   gap: 3rem;
+}
+
+.vag__segunda-box--interna div {
+   display: flex;
+   flex-direction: column;
+   padding-left: 1.5rem;
+   gap: 1.5rem;
+}
+
+/* DEPOIMENTOS */
+.dep__container {
+   display: flex;
+   flex-direction: column;
+   font-size: 3rem;
+   background-color: var(--vermelho-escuro);
+   border: 0.2rem solid var(--preto);
+   padding: 10rem;
+   text-align: center;
+}
